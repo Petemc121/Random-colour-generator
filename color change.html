@@ -1,0 +1,53 @@
+<html>
+
+	<head>
+	
+		
+		<link rel="stylesheet" type="text/css" href="color change.css">
+	
+	</head>
+	
+	<body>
+	
+	
+		<div id="page">
+		
+		<button id="color"> 
+		
+			Change Color
+		
+		</button>
+		
+		</div>
+	
+		<script type="text/javascript">
+		
+			
+			
+		
+			document.getElementById("color").addEventListener( "click", function() {
+			
+				var randomcolor = Math.floor(Math.random()*16777215).toString(16);
+			
+				document.getElementById("page").style.backgroundColor = randomcolor;
+				
+				document.getElementById("color").style.backgroundColor = randomcolor;
+				
+			
+				});
+				
+				
+				
+				
+				
+				
+		</script>
+	
+	
+	</body>
+	
+	
+
+
+
+</html>
